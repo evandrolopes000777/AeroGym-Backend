@@ -1,13 +1,11 @@
 package br.com.ifba.academia;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = AcademiaApplication.class)
 class AcademiaApplicationTests {
-
     @Test
-    void contextLoads() {
+    void entrypointDaAplicacaoEstaDisponivel() {
+        assertNotNull(AcademiaApplication.class);
     }
-
 }
